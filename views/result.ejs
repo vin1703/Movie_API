@@ -1,0 +1,9 @@
+<h1>MOVIE RESULTS FOR : <%= name.toUpperCase() %> </h1>
+
+<% for(var i=0 ; i <data.Search.length ; i++){ %>	
+	<li>  
+	<ul> <%= data.Search[i].Title %> </ul>
+	<ul> <%= data.Search[i].Year %> </ul>
+	<ul> <img src=<%=data.Search[i].Poster%> /> </ul>
+	</li>	
+<% } %>
